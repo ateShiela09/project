@@ -1,0 +1,114 @@
+/* IMAGE - Circle Style */
+.about-section img {
+  width: 200px;         
+  height: 200px;        
+  object-fit: cover;    
+  border-radius: 300%;   
+  display: block;
+  margin: 0 auto 15px;   /* naka-center */
+  margin-left: 20px;     /* konting urong pa-kanan */
+  border: 4px solid rgb(138, 145, 173); 
+}
+
+/* ABOUT SECTION */
+.about-section {
+  position: relative;
+  padding: 30px 20px;
+  max-width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  background: url("craft2.jpg") no-repeat center top; /* nakaangat */
+  background-position: center 80px;  /* ibinaba ng 80px */
+  background-size: cover;      
+  background-attachment: fixed; 
+  color: #111;
+  z-index: 0; /* para mag-work ang overlay */
+}
+
+/* Overlay effect para mas mabasa ang text */
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.7); /* puting overlay, 70% opacity */
+  z-index: 0;
+}
+
+/* Content laging nasa ibabaw */
+.about-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* FOOTER FIX */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(5, 251, 230);
+  padding: 20px;
+  color: #090909;
+  margin-top: auto;
+}
+
+  
+  
+  
+  
+  .about-section p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(236, 138, 138);
+  }
+  
+  header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* NAVIGATION */
+  .nav a {
+    color: #050505;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border-radius: 20px;
+  }
+  
+  .nav a:hover {
+    background-color: #284e31;
+    color: rgba(237, 241, 240, 0.924);
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    background-color: rgb(236, 138, 138);
+    padding: 10px;
+    color: #090909;
+  }
+  

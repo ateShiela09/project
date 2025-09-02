@@ -1,0 +1,122 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(236, 138, 138);
+  }
+  
+  header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* NAVIGATION */
+  .nav a {
+    color: #333;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border-radius: 30px;
+  }
+  
+  .nav a:hover {
+    background-color: #284e31;
+    color: #fff;
+  }
+  
+ /* HERO SECTION */
+.hero-image {
+  background: url("p1.jpg") no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: flex-end;   /* content sa kanan */
+  align-items: center;
+  text-align: left;           /* text alignment sa ka */
+  color: white;
+  position: relative;
+  padding-right: 60px;         /* hindi sobrang dikit sa gilid */
+  padding-left: 60px;          /* may breathing space */
+}
+
+.hero-image {
+    background: url("p1.jpg") no-repeat center center/cover;
+    height: vh;
+    display: flex;
+    justify-content: flex-start;  /* content pumunta sa kaliwa */
+    align-items: center;          /* naka-center vertically */
+    text-align: left;             /* text align sa kaliwa */
+    padding-left: 80px;           /* dagdag space mula sa gilid */
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 5;
+    max-width: 500px;             /* para hindi super lapad tingnan */
+  }
+
+.hero-text p {
+  font-size: 26px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.hero-text h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #f1f1f1;
+}
+
+.hero-text button {
+    padding: 12px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #284e31;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  
+    font-family: 'Arial', sans-serif; /* sample font */
+    font-weight: 600;                   /* mas bold */
+    letter-spacing: 1px;                /* dagdag space sa letters */
+    text-transform: uppercase;          /* gawin all caps */
+  }
+  
+
+.hero-text button:hover {
+  background-color: rgb(236, 138, 138);
+}
+/* Fade-in Animation for Creative Graphic Designer */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 5s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*footer */
+  footer {
+    text-align: center;
+    background-color: rgb(236, 138, 138);
+    padding: 10px;
+    color: #090909;
+  }
+  
